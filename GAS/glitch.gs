@@ -1,11 +1,10 @@
-function send(){
- 	const URL = "";
+function postToGlitch(){
  	const headers =  {
  		'contentType': 'application/json; charset=utf-8',
  		'method': 'post',
  		'muteHttpExceptions': true
    };
-   request.post(URL,{type : "wake"},headers);
+   request.post(GLITCH_URL,{type : "wake"},headers);
  }
  
  const request = {
